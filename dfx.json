@@ -1,0 +1,30 @@
+{
+  "canisters": {
+    "Test10_backend": {
+      "build": "npx azle Test10_backend",
+      "candid": "src/Test10_backend/Test10_backend.did",
+      "gzip": true,
+      "main": "src/Test10_backend/src/index.ts",
+      "type": "custom",
+      "wasm": ".azle/Test10_backend/Test10_backend.wasm"
+    },
+    "Test10_frontend": {
+      "dependencies": [
+        "Test10_backend"
+      ],
+      "source": [
+        "src/Test10_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "Test10_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
