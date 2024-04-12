@@ -15,5 +15,8 @@
   "workspaces": [
     "src/Test10_backend",
     "src/Test10_frontend"
-  ]
+  ],
+  "dependencies": {
+    "azle": "^0.21.1"
+  }
 }
